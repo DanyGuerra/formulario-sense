@@ -1,0 +1,319 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap");
+
+body {
+  margin: 0;
+  font-family: "Montserrat", sans-serif;
+  color: #545454;
+}
+
+button:disabled,
+button[disabled] {
+  border: 1px solid #999999;
+  background-color: #cccccc;
+  color: #666666;
+}
+button:disabled:hover,
+button[disabled]:hover {
+  cursor: progress;
+}
+
+header {
+  background-color: #e40000;
+  width: 100%;
+  height: 140px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+header img {
+  max-width: 240px;
+  width: 50%;
+}
+
+.circle {
+  z-index: -1;
+  position: absolute;
+  background-color: none;
+  border-top-left-radius: 100px;
+  border-bottom-left-radius: 100px;
+  width: 100px;
+  height: 200px;
+  right: 0;
+  top: 0px;
+  border-right: none;
+  border-left: solid 1px #545454;
+  border-bottom: solid 1px #545454;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.main-section {
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+  margin: 50px 0;
+}
+
+.main-section-success {
+  width: 70%;
+  height: 50vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.main-section-success button {
+  width: 50%;
+  border: none;
+  background-color: #e40000;
+  height: 50px;
+  font-weight: 700;
+  font-size: 20px;
+}
+
+.main-section-success button a {
+  color: white;
+  text-decoration: none;
+}
+.left-message {
+  width: 100%;
+  text-align: center;
+}
+
+h1 {
+  font-weight: 400;
+  font-size: 20px;
+}
+
+h1 b {
+  font-weight: 700;
+  font-size: 20px;
+}
+
+h2 {
+  color: #e40000;
+  font-weight: 700;
+  font-size: 18px;
+  font-style: normal;
+}
+
+p {
+  font-weight: 400;
+  font-size: 15px;
+}
+
+.formulario {
+  margin-top: 20px;
+}
+
+form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+form input {
+  width: 100%;
+  height: 40px;
+  border: none;
+  border-bottom: 1px solid #545454;
+  outline: none;
+}
+
+form input:focus {
+  border-bottom: 1px solid #e40000;
+}
+
+form button {
+  width: 100%;
+  color: white;
+  border: none;
+  background-color: #e40000;
+  height: 50px;
+  font-weight: 700;
+  font-size: 20px;
+  font-family: "Montserrat";
+}
+
+button:hover {
+  cursor: pointer;
+}
+
+form .autoComplete_wrapper {
+  width: 100%;
+}
+
+#autoComplete {
+  width: 100%;
+  border-radius: 20px;
+  height: 40px;
+}
+
+.autoComplete_wrapper > input {
+  font-family: "Montserrat", sans-serif;
+  color: #545454;
+  font-size: 15px;
+  font-weight: 400;
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+footer a {
+  width: 100%;
+  height: auto;
+}
+
+.banner {
+  width: 100%;
+  height: 185px;
+  background-image: url(../assets/banner-mobile.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  margin-bottom: 35px;
+}
+
+footer .aviso-privacidad {
+  margin-bottom: 20px;
+}
+
+.aviso-privacidad a {
+  text-decoration: none;
+  color: #545454;
+  font-weight: 400;
+  font-size: 15px;
+}
+
+.form-control {
+  text-align: center;
+  width: 100%;
+  position: relative;
+}
+
+.form-control small {
+  visibility: hidden;
+  position: absolute;
+  bottom: -17px;
+}
+
+.form-control i {
+  position: absolute;
+  top: 10px;
+  right: 5px;
+}
+
+.form-control input {
+  box-sizing: border-box;
+  height: 40px;
+  width: 100%;
+}
+
+.fa-check-circle {
+  visibility: hidden;
+  color: green;
+}
+
+.fa-exclamation-circle {
+  visibility: hidden;
+  color: red;
+}
+
+.form-control.success input {
+  border: 2px green solid;
+}
+
+.form-control.error input {
+  border: 2px red solid;
+}
+
+.form-control.success i.fa-check-circle {
+  visibility: visible;
+}
+
+.form-control.error i.fa-exclamation-circle {
+  visibility: visible;
+}
+
+.form-control.error small {
+  visibility: visible;
+  color: red;
+}
+
+@media (min-width: 720px) {
+  .circle {
+    border-top-left-radius: 0px;
+    border-bottom-left-radius: 0px;
+    border-top-right-radius: 100px;
+    border-bottom-right-radius: 100px;
+    width: 100px;
+    height: 200px;
+    left: 0;
+    top: 0px;
+    border-left: none;
+    border-right: solid 1px #545454;
+    border-bottom: solid 1px #545454;
+  }
+
+  .left-message h1 {
+    font-weight: 400;
+    font-size: 30px;
+  }
+
+  .left-message h1 b {
+    font-weight: 700;
+    font-size: 30px;
+  }
+  .main-section {
+    width: 100%;
+    flex-direction: row;
+    padding: 0 10%;
+    gap: 10%;
+    margin-top: 100px 0;
+  }
+
+  .left-message {
+    width: 45%;
+    text-align: left;
+  }
+  .formulario {
+    width: 45%;
+  }
+
+  .banner {
+    width: 100%;
+    background-image: url(../assets/banner-desktop.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    margin-bottom: 35px;
+  }
+
+  .main-section-success button {
+    width: 30%;
+  }
+}
+
+@media (min-width: 992px) {
+  .banner {
+    width: 100%;
+    height: 256px;
+  }
+}
+
+@media (min-width: 1280px) {
+  .banner {
+    background-size: cover;
+  }
+}

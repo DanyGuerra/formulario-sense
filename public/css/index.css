@@ -232,11 +232,11 @@ footer .aviso-privacidad {
 }
 
 .form-control.success input {
-  border: 2px green solid;
+  border: 1px green solid;
 }
 
 .form-control.error input {
-  border: 2px red solid;
+  border: 1px red solid;
 }
 
 .form-control.success i.fa-check-circle {

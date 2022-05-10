@@ -1,14 +1,13 @@
 const HOST = location.protocol + "//" + location.host;
 const btn_Send = document.getElementById("btn-download");
+const nombre = document.getElementById("nombre");
+const correo = document.getElementById("correo");
+const telefono = document.getElementById("telefono");
+const empresa = document.getElementById("empresa");
+const inputs = [nombre, correo, telefono, empresa];
 
 btn_Send.addEventListener("click", async (e) => {
   e.preventDefault();
-
-  const nombre = document.getElementById("nombre");
-  const correo = document.getElementById("correo");
-  const telefono = document.getElementById("telefono");
-  const empresa = document.getElementById("empresa");
-  const inputs = [nombre, correo, telefono, empresa];
 
   const errors = allValidation(inputs);
 
@@ -39,7 +38,6 @@ btn_Send.addEventListener("click", async (e) => {
         a.href = window.URL.createObjectURL(data);
         a.download = filename;
         a.click();
-
         if (res.ok) {
           window.location.href = `${HOST}/exito`;
         }

@@ -81,7 +81,6 @@ app.get("/download", async (req, res) => {
 });
 
 app.get("/exito", (req, res) => {
-  console.log("render exito");
   res.render("exito", { titulo: "My page" });
 });
 

@@ -77,7 +77,7 @@ app.post("/", async (req, res) => {
 });
 
 app.get("/download", async (req, res) => {
-  res.download("./public/assets/example.txt");
+  res.download("./public/assets/sense-path.pdf");
 });
 
 app.get("/exito", (req, res) => {

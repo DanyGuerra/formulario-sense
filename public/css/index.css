@@ -1,9 +1,18 @@
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Sen&display=swap");
+
+:root {
+  --primary-color: #005cf5;
+  --secondary-color: #ff6173;
+  --font-color: #80807f;
+}
 
 body {
   margin: 0;
-  font-family: "Montserrat", sans-serif;
-  color: #545454;
+  font-family: "Sen";
+  color: var(--font-color);
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
 }
 
 button:disabled,
@@ -17,39 +26,29 @@ button[disabled]:hover {
   cursor: progress;
 }
 
-header {
-  background-color: #e40000;
-  width: 100%;
-  height: 140px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-header img {
-  max-width: 240px;
-  width: 50%;
-}
-
-.circle {
-  z-index: -1;
-  position: absolute;
-  background-color: none;
-  border-top-left-radius: 100px;
-  border-bottom-left-radius: 100px;
-  width: 100px;
-  height: 200px;
-  right: 0;
-  top: 0px;
-  border-right: none;
-  border-left: solid 1px #545454;
-  border-bottom: solid 1px #545454;
-}
-
 main {
   display: flex;
   justify-content: center;
   margin-bottom: 20px;
+  margin-top: 100px;
+}
+
+h1 {
+  font-size: 40px;
+  color: var(--primary-color);
+  font-style: normal;
+  font-weight: 400;
+}
+
+p {
+  font-weight: 400;
+  text-align: left;
+}
+
+.mancha {
+  position: absolute;
+  right: 75px;
+  top: 36px;
 }
 
 .main-section {
@@ -59,57 +58,13 @@ main {
   margin: 50px 0;
 }
 
-.main-section-success {
-  width: 70%;
-  height: 50vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-
-.main-section-success button {
-  width: 50%;
-  border: none;
-  background-color: #e40000;
-  height: 50px;
-  font-weight: 700;
-  font-size: 20px;
-}
-
-.main-section-success button a {
-  color: white;
-  text-decoration: none;
-}
 .left-message {
   width: 100%;
   text-align: center;
 }
 
-h1 {
-  font-weight: 400;
-  font-size: 20px;
-}
-
-h1 b {
-  font-weight: 700;
-  font-size: 20px;
-}
-
-h2 {
-  color: #e40000;
-  font-weight: 700;
-  font-size: 18px;
-  font-style: normal;
-}
-
-p {
-  font-weight: 400;
-  font-size: 15px;
-}
-
 .formulario {
-  margin-top: 20px;
+  margin-top: 100px;
 }
 
 form {
@@ -122,22 +77,26 @@ form {
 }
 
 form input {
+  color: var(--primary-color);
   width: 100%;
   height: 40px;
   border: none;
-  border-bottom: 1px solid #545454;
+  border-bottom: 2px solid var(--font-color);
   outline: none;
+  padding-left: 10px;
+  font-weight: 700;
+  font-size: 18px;
 }
 
 form input:focus {
-  border-bottom: 1px solid #e40000;
+  border-bottom: 2px solid var(--primary-color);
 }
 
 form button {
   width: 100%;
   color: white;
   border: none;
-  background-color: #e40000;
+  background-color: var(--primary-color);
   height: 50px;
   font-weight: 700;
   font-size: 20px;
@@ -150,19 +109,6 @@ button:hover {
 
 form .autoComplete_wrapper {
   width: 100%;
-}
-
-#autoComplete {
-  width: 100%;
-  border-radius: 20px;
-  height: 40px;
-}
-
-.autoComplete_wrapper > input {
-  font-family: "Montserrat", sans-serif;
-  color: #545454;
-  font-size: 15px;
-  font-weight: 400;
 }
 
 footer {
@@ -232,11 +178,11 @@ footer .aviso-privacidad {
 }
 
 .form-control.success input {
-  border: 1px green solid;
+  border-bottom: 2px green solid;
 }
 
 .form-control.error input {
-  border: 1px red solid;
+  border-bottom: 2px red solid;
 }
 
 .form-control.success i.fa-check-circle {
@@ -253,29 +199,6 @@ footer .aviso-privacidad {
 }
 
 @media (min-width: 720px) {
-  .circle {
-    border-top-left-radius: 0px;
-    border-bottom-left-radius: 0px;
-    border-top-right-radius: 100px;
-    border-bottom-right-radius: 100px;
-    width: 100px;
-    height: 200px;
-    left: 0;
-    top: 0px;
-    border-left: none;
-    border-right: solid 1px #545454;
-    border-bottom: solid 1px #545454;
-  }
-
-  .left-message h1 {
-    font-weight: 400;
-    font-size: 30px;
-  }
-
-  .left-message h1 b {
-    font-weight: 700;
-    font-size: 30px;
-  }
   .main-section {
     width: 100%;
     flex-direction: row;
@@ -286,7 +209,6 @@ footer .aviso-privacidad {
 
   .left-message {
     width: 45%;
-    text-align: left;
   }
   .formulario {
     width: 45%;

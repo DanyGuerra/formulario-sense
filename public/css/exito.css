@@ -1,0 +1,45 @@
+@import url("https://fonts.googleapis.com/css2?family=Sen:wght@400;700;800&display=swap");
+
+:root {
+  --primary-color: #005cf5;
+  --secondary-color: #ff6173;
+  --font-color: #80807f;
+}
+
+body {
+  margin: 0;
+  font-family: "Sen";
+  color: var(--primary-color);
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+h1 {
+  font-weight: 800;
+  font-size: 40px;
+}
+
+h2 {
+  font-weight: 400;
+  font-size: 24px;
+}
+.main-section {
+  margin-top: 10vh;
+  text-align: center;
+  width: 50%;
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}

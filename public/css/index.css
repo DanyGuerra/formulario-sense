@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Sen&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Sen:wght@400;700;800&display=swap");
 
 :root {
   --primary-color: #005cf5;
@@ -30,7 +30,7 @@ main {
   display: flex;
   justify-content: center;
   margin-bottom: 20px;
-  margin-top: 100px;
+  margin-top: 0px;
 }
 
 h1 {
@@ -45,17 +45,31 @@ p {
   text-align: left;
 }
 
-.mancha {
-  position: absolute;
-  right: 75px;
-  top: 36px;
+.hidden-mobile {
+  display: none;
+}
+
+.show-mobile {
+  display: block;
+}
+
+.secondary-button {
+  width: 35%;
+  height: 60px;
+  background: var(--secondary-color);
+  color: white;
+  border: none;
+  font-weight: 800;
+  font-size: 24px;
+  min-width: 250px;
 }
 
 .main-section {
-  width: 70%;
+  width: 80%;
   display: flex;
   flex-direction: column;
   margin: 50px 0;
+  text-align: center;
 }
 
 .left-message {
@@ -63,8 +77,12 @@ p {
   text-align: center;
 }
 
+.left-message h1 {
+  font-size: 20px;
+}
+
 .formulario {
-  margin-top: 50px;
+  margin: 50px 0;
 }
 
 form {
@@ -127,12 +145,16 @@ footer a {
 
 .banner {
   width: 100%;
-  height: 185px;
-  background-image: url(../assets/banner-mobile.png);
-  background-repeat: no-repeat;
-  background-size: contain;
-  margin-bottom: 35px;
+  color: white;
+  background-color: var(--primary-color);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
+
+/* .banner img {
+  height: auto;
+} */
 
 footer .aviso-privacidad {
   margin-bottom: 20px;
@@ -199,40 +221,77 @@ footer .aviso-privacidad {
   color: red;
 }
 
-@media (min-width: 720px) {
+footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.banner-text {
+  width: 55%;
+  margin-left: 10%;
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 40px;
+}
+
+.banner-text h1 {
+  color: white;
+  font-size: 40px;
+}
+
+.banner-text h1 b {
+  font-weight: 800;
+}
+
+footer .aviso-privacidad {
+  margin: 20px 0;
+}
+
+footer .aviso-privacidad a {
+  color: var(--primary-color);
+  text-decoration: none;
+}
+
+@media (min-width: 992px) {
   .main-section {
     width: 100%;
     flex-direction: row;
     padding: 0 10%;
-    gap: 10%;
+    gap: 20%;
     margin-top: 100px 0;
-  }
-
-  .left-message {
-    width: 45%;
   }
   .formulario {
     width: 45%;
   }
-
-  .banner {
-    width: 100%;
-    background-image: url(../assets/banner-desktop.png);
-    background-repeat: no-repeat;
-    background-size: contain;
-    margin-bottom: 35px;
+  .mancha {
+    display: block;
+    position: absolute;
+    right: 75px;
+    top: 36px;
   }
-}
-
-@media (min-width: 992px) {
-  .banner {
-    width: 100%;
-    height: 256px;
+  .left-message h1 {
+    font-size: 40px;
   }
-}
 
-@media (min-width: 1280px) {
-  .banner {
-    background-size: cover;
+  main {
+    margin-top: 100px;
+  }
+
+  .show-desktop {
+    display: block;
+  }
+  .hidden-desktop {
+    display: none;
+  }
+  .left-message {
+    width: 40%;
+    text-align: center;
+  }
+
+  .formulario {
+    width: 40%;
+    margin-top: 10px;
   }
 }

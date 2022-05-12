@@ -15,11 +15,19 @@ body {
   font-size: 18px;
 }
 
+a {
+  color: var(--primary-color);
+}
+h2 a {
+  font-weight: 800;
+}
+
 main {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  margin: 60px 0;
 }
 
 h1 {
@@ -32,9 +40,8 @@ h2 {
   font-size: 24px;
 }
 .main-section {
-  margin-top: 10vh;
   text-align: center;
-  width: 50%;
+  width: 90%;
 }
 
 footer {
@@ -42,4 +49,78 @@ footer {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+
+footer .banner {
+  width: 100%;
+  padding-top: 20px;
+  padding-bottom: 40px;
+  background-color: var(--primary-color);
+}
+
+footer .aviso-privacidad {
+  margin: 20px 0;
+}
+
+footer .aviso-privacidad a {
+  color: var(--primary-color);
+  text-decoration: none;
+}
+
+button:hover {
+  cursor: pointer;
+}
+
+.banner {
+  color: white;
+}
+
+.secondary-button {
+  width: 40%;
+  height: 60px;
+  background: var(--secondary-color);
+  color: white;
+  border: none;
+  font-weight: 800;
+  font-size: 24px;
+  min-width: 250px;
+}
+
+.banner-text {
+  text-align: center;
+  font-weight: 400;
+  width: 80%;
+  margin: 0 auto;
+}
+
+.banner-text h1 {
+  font-weight: 400;
+}
+
+.banner-text h1 b {
+  font-weight: 700;
+}
+
+.contacto {
+  width: 100%;
+  font-weight: 400;
+  font-size: 30px;
+  color: var(--secondary-color);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+@media (min-width: 992px) {
+  .banner-text {
+    width: 45%;
+  }
+  .contacto {
+    flex-direction: row;
+    font-size: 32px;
+  }
+  .main-section {
+    width: 50%;
+  }
 }

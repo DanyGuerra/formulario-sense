@@ -67,7 +67,7 @@ function formValidation(input) {
   let isValid = false;
 
   if (value === "" || null) {
-    setErrorFor(input, `${input.getAttribute("placeholder")} is required`);
+    setErrorFor(input, `${input.getAttribute("placeholder")} es obligatorio`);
   } else {
     const minLength = input.getAttribute("minlength");
     const maxLength = input.getAttribute("maxLength");
@@ -99,7 +99,7 @@ function formValidation(input) {
         if (!isNumberValid(value)) {
           setErrorFor(
             input,
-            `${input.getAttribute("placeholder")} must be a number`
+            `${input.getAttribute("placeholder")} debe ser un número`
           );
         } else if (minLength && value.length < minLength) {
           setErrorFor(
@@ -120,10 +120,7 @@ function formValidation(input) {
         break;
       case "email":
         if (!isEmail(value)) {
-          setErrorFor(
-            input,
-            `${input.getAttribute("placeholder")} is not valid`
-          );
+          setErrorFor(input, `${input.getAttribute("placeholder")} no válido`);
         } else {
           setSuccessFor(input);
           isValid = true;

@@ -11,13 +11,12 @@
       integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU"
       crossorigin="anonymous"
     />
-    <link rel="stylesheet" href="./css/autocomplete.css">
     <link rel="stylesheet" href="./css/index.css">
     <script src="https://www.google.com/recaptcha/api.js"></script>
   </head>
   <body>
 
-    <div class="mancha">
+    <div class="mancha hidden-mobile show-desktop">
       <img src="./assets/mancha.svg" alt="Logo">
     </div>
 
@@ -25,13 +24,15 @@
     <main>
       <section class="main-section">
         <div class="left-message">
-          <div class="logo-header">
-            <img src="./assets/logo-sensepath-2.png" alt="">
+          <div class="logo-header show-desktop hidden-mobile">
+            <img src="./assets/logo-sensepath.svg" alt="Sense Path logo" width="252px">
           </div>
           <h1>INTRODUCCIÓN A LA <b>EVALUACIÓN SENSORIAL</b>   EBOOK GRATUITO
           </h1>
 
-          <p>Regístrate para descargar un exclusivo Ebook sobre como la evaluación sensorial puede ayudar a tu producto. Descubre los atributos personales, lo que opinan tus clientes o futuros compradores, como diferenciarte de tu compentencia y mucho más. </p>
+          <p class="show-desktop hidden-mobile">Regístrate para descargar un exclusivo Ebook sobre como la evaluación sensorial puede ayudar a tu producto. Descubre los atributos personales, lo que opinan tus clientes o futuros compradores, como diferenciarte de tu compentencia y mucho más. </p>
+          <p class="hidden-desktop show-mobile">Regístrate para descargar un exclusivo Ebook sobre como la evaluación sensorial puede ayudar a tu producto.</p>
+
         </div>
         <div class="formulario">
 
@@ -94,15 +95,25 @@
                 </button>
               </form>
             </div>
+            <div class="logo-main hidden-desktop">
+              <img src="./assets/logo-sensepath.svg" alt="Sense Path logo" width="252px">
+            </div>
+            <p class="hidden-desktop show-mobile">Descubre los atributos personales, lo que opinan tus clientes o futuros compradores, como diferenciarte de tu compentencia y mucho más. </p>
             </section>
         </main>
         <footer>
-          <a href="https://www.reforcepharma.com/" target="_blank">
             <div class="banner">
+              <div class="banner-text">
+                <h1>ESTRATEGÍA SENSORIAL APLICADA A TU MARCA <b>SOMOS LA EMPRESA MEXICANA</b> DE MÁS ALTO EXPERTISE SENSORIAL
+                </h1>
+                <a href="https://www.sense-path.com/#topFooter" target="_blank">
+                  <button class="secondary-button">CONTACTÁNOS</button>
+                </a>
+              </div>
+              <img class="show-desktop hidden-mobile" src="./assets/expertise.png" alt="">
             </div>
-          </a>
           <div class="aviso-privacidad">
-            <a href="https://www.reforcepharma.com/politica-de-privacidad" target="_blank">
+            <a href="https://www.sense-path.com/SP-AvisoPrivacidad.pdf" target="_blank">
             AVISO DE PRIVACIDAD </a>
           </div>
           </footer>

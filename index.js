@@ -77,7 +77,7 @@ app.post("/", async (req, res) => {
 });
 
 app.get("/download", async (req, res) => {
-  res.download("./public/assets/sense-path.pdf");
+  res.download("./public/assets/SP-Intro_Evaluacion_Sensorial.pdf");
 });
 
 app.get("/exito", (req, res) => {

@@ -33,7 +33,7 @@ btn_Send.addEventListener("click", async (e) => {
       if (sendInformation.ok) {
         const res = await fetch("download");
         const data = await res.blob();
-        const filename = "sense-path.pdf";
+        const filename = "SP-Intro_Evaluacion_Sensorial.pdf";
         var a = document.createElement("a");
         a.href = window.URL.createObjectURL(data);
         a.download = filename;
